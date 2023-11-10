@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: yellow;
+    font-family: Nunito;
+}
+/* title-page */
+.title{
+    font-family: Lumanosimo;
+    font-size: 70px;
+    text-align: center;
+    color: chartreuse;
+    text-shadow: 5px 1px rgb(98, 98, 233);
+}
+.title img{
+    width: 40%;
+}
+
+/*------- cards-------- */
+.card-box{
+    display: flex;
+    flex-direction: column;
+    background: orange;
+    border-radius: 20px;
+    height: 60%;
+    width: 300px;
+}
+.img-box{
+    height: 40%;
+    background: whitesmoke;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-align: center;
+}
+.img-box img{
+    height: 100%;
+
+}
+
+#pokemon-name, #pokemon-type ,.abilites-box li{
+    display: inline-block;
+    margin-block: 5px;
+    margin-inline: auto;
+    background: yellow;
+    padding: 7px;
+    border-radius: 20px;
+    color: orange
+}
+.abilites-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.abilites-box li{
+    list-style: none;
+}
+.description-box{
+    text-align: center;
+    margin: 15px;
+    color: white;
+}
+
+/* ----------new card button ---------*/
+#card-button{
+    display: inline-block;
+    margin-block: 15px;
+    background: rgb(4, 245, 4);
+    padding: 7px;
+    border-radius: 20px;
+    color: white;
+    font-size: 15px;
+    border-color: whitesmoke;
+}

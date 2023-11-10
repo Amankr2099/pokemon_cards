@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokemonCards</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+</head>
+
+<body>
+    <div class="card-box">
+        <div class="img-box">
+            <img src="<%= pokemonImage %>">
+        </div>
+        <h3 id="pokemon-name" >
+            <%= pokemonName %>
+        </h3>
+        <h5 id="pokemon-type">
+           Type : <%= pokemonType %>
+        </h5>
+        <div class="abilites-box">
+            <li>Height :<%= pokemonHeight %>
+            </li>
+            <li>Weight :<%= pokemonWeight %>
+            </li>
+        </div>
+        <div class="description-box">
+            "<%= pokemonDescription %>"
+        </div>
+    </div>
+    <form action="/" method="post">
+        <button type="submit" id="card-button">New card</button>
+    </form>
+</body>
+
+</html>
